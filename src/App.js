@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import DoASurvey from "./components/DoASurvey";
+import SurveysDone from "./components/SuverysDone";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <PrivateRoute path="/SurveyEx" component={DoASurvey} />
           <PrivateRoute path="/profile" component={Profile} />
+          <PrivateRoute path="/surveysdone" component={SurveysDone}/>
         </Switch>
       </Router>
     </div>
